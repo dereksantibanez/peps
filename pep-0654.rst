@@ -1177,7 +1177,7 @@ incomplete and this could create problems.
 Furthermore, as we explained in the `Handling Exception Groups`_ section, we
 find it unlikely that iteration over leaf exceptions will have many use cases.
 We did, however, provide there the code for a traversal algorithm that
-correctly constructs each leaf exceptions' metadata. If it does turn out to
+correctly constructs each leaf exception's metadata. If it does turn out to
 be useful in practice, we can add that utility to the standard library.
 
 Make ``ExceptionGroup`` Extend ``BaseException``
@@ -1320,7 +1320,7 @@ or cleanup is required. This decision is likely to be the same whether the group
 contains a single or multiple instances of something like a ``KeyboardInterrupt``
 or ``asyncio.CancelledError``.  Therefore, it is more convenient to handle all
 exceptions matching an ``except*`` at once.  If it does turn out to be necessary,
-the handler can inpect the exception group and process the individual
+the handler can inspect the exception group and process the individual
 exceptions in it.
 
 Not Matching Naked Exceptions in ``except*``
